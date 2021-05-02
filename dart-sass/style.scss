@@ -1,0 +1,134 @@
+@import "lib/minireset.scss";
+
+@mixin maintitle($size: 2em) {
+    font-size: $size;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+@mixin ring($bordersize: 2px, $color: #000, $heightwidth) {
+    position: relative;
+    height: $heightwidth;
+    width: $heightwidth;
+    border-radius: 50%;
+    border: $bordersize solid $color;
+    box-shadow: $bordersize/5 $bordersize/5 $bordersize/2 darken($color, 10%);
+
+}
+
+@mixin separator($color: #000, $width: 100px, $margin: 20px auto 0px auto) {
+    &::after {
+        content: '';
+        display: block;
+        width: $width;
+        height: 4px;
+        background: $color;
+        margin: $margin;
+
+    }
+}
+
+@mixin linkhover {
+    &:hover {
+        color: darken($primarycolor, 20%);
+        list-style: none;
+        transition: 0.4s;
+    }
+}
+
+$primarycolor: rgb(223, 116, 35);
+$lightcolor: rgb(240, 220, 205);
+$bgcolor: rgba(240, 234, 234, 0.919);
+
+body {
+    background: $bgcolor;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+
+}
+
+
+.menu {
+    background-color: $primarycolor;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 16px;
+        text-transform: uppercase;
+
+        span.logo {
+            margin: 0px 50px 0px 50px;
+            color: $lightcolor;
+            font-weight: bold;
+        }
+
+        li>a {
+            color: $lightcolor;
+            text-decoration: none;
+            margin-right: 60px;
+
+            @include linkhover;
+
+        }
+
+    }
+
+}
+
+.rings {
+
+    h1 {
+        @include maintitle(3em);
+        @include separator(rgba(0, 0, 0, 0.85), 200px);
+        padding: 40px;
+        text-transform: uppercase;
+    }
+
+    div.ringTitle {
+
+        @include maintitle(1.5em);
+        margin: 70px 0px 0px 200px;
+
+    }
+
+    .theOneRing {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+
+        div.goldRing {
+            @include ring(10px, gold, 200px);
+
+        }
+
+    }
+
+    .multipleRings {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+
+    }
+
+    @for $i from 1 through 6 {
+        .sixRings:nth-of-type(#{$i}) {
+            @include ring(4px * $i/2, rgba(0, 0, 0, 0.885), (1+($i/2))*35px);
+            margin-right: -15px*$i;
+
+        }
+    }
+}
+
+.footer {
+    background-color: $primarycolor;
+    color: $lightcolor;
+
+    li>a {
+        color: $lightcolor;
+        @include linkhover;
+    }
+
+
+}

@@ -1,0 +1,219 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  background: rgba(240, 234, 234, 0.919);
+  background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+}
+
+.menu {
+  background-color: #df7423;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 16px;
+  text-transform: uppercase;
+}
+.menu ul span.logo {
+  margin: 0px 50px 0px 50px;
+  color: #f0dccd;
+  font-weight: bold;
+}
+.menu ul li > a {
+  color: #f0dccd;
+  text-decoration: none;
+  margin-right: 60px;
+}
+.menu ul li > a:hover {
+  color: #884614;
+  list-style: none;
+  transition: 0.4s;
+}
+
+.rings h1 {
+  font-size: 3em;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 40px;
+  text-transform: uppercase;
+}
+.rings h1::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  margin: 20px auto 0px auto;
+}
+.rings div.ringTitle {
+  font-size: 1.5em;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 70px 0px 0px 200px;
+}
+.rings .theOneRing {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.rings .theOneRing div.goldRing {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid gold;
+  box-shadow: 2px 2px 5px #ccac00;
+}
+.rings .multipleRings {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.rings .sixRings:nth-of-type(1) {
+  position: relative;
+  height: 52.5px;
+  width: 52.5px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0.885);
+  margin-right: -15px;
+}
+.rings .sixRings:nth-of-type(2) {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 0.8px 0.8px 2px rgba(0, 0, 0, 0.885);
+  margin-right: -30px;
+}
+.rings .sixRings:nth-of-type(3) {
+  position: relative;
+  height: 87.5px;
+  width: 87.5px;
+  border-radius: 50%;
+  border: 6px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 1.2px 1.2px 3px rgba(0, 0, 0, 0.885);
+  margin-right: -45px;
+}
+.rings .sixRings:nth-of-type(4) {
+  position: relative;
+  height: 105px;
+  width: 105px;
+  border-radius: 50%;
+  border: 8px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 1.6px 1.6px 4px rgba(0, 0, 0, 0.885);
+  margin-right: -60px;
+}
+.rings .sixRings:nth-of-type(5) {
+  position: relative;
+  height: 122.5px;
+  width: 122.5px;
+  border-radius: 50%;
+  border: 10px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.885);
+  margin-right: -75px;
+}
+.rings .sixRings:nth-of-type(6) {
+  position: relative;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 12px solid rgba(0, 0, 0, 0.885);
+  box-shadow: 2.4px 2.4px 6px rgba(0, 0, 0, 0.885);
+  margin-right: -90px;
+}
+
+.footer {
+  background-color: #df7423;
+  color: #f0dccd;
+}
+.footer li > a {
+  color: #f0dccd;
+}
+.footer li > a:hover {
+  color: #884614;
+  list-style: none;
+  transition: 0.4s;
+}
+
+/*# sourceMappingURL=style.css.map */
